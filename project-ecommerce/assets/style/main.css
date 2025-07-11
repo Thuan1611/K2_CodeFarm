@@ -114,6 +114,13 @@ h2.section-title {
     background-color: var(--color-primary);
     color: white;
     text-align: center;
+    button {
+      background: #000;
+      color: #fff;
+      border: none;
+      width: 20px;
+      height: 20px;
+    }
   }
   .header-main {
     padding: 24px 0;
@@ -148,7 +155,9 @@ h2.section-title {
       border: none;
       min-width: 300px;
     }
-    .user-control > i {
+    .user-control > button {
+      border: none;
+      background-color: inherit;
     }
     .container {
       gap: 40px;
@@ -613,16 +622,17 @@ footer {
     margin-bottom: 50px;
     .container {
       h1 {
+        padding: 20px;
         font-size: 32px;
       }
       .category-main {
         display: flex;
         flex-direction: column;
+        padding: 15px 20px;
         gap: 20px;
         .category-item {
           width: 310px;
-          height: 190px;
-          font-size: 36px;
+            font-size: 36px;
         }
 
         .category-item > img {
