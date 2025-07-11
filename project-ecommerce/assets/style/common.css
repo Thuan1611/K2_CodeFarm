@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-Variable.ttf");
+}
+@font-face {
+    font-family: "Intergral";
+    src: url("../fonts/Fontspring-DEMO-integralcf-regular.otf");
+}
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/** Button : BEGIN */
+.btn{
+
+}
+.btn.btn-big{
+
+}
+.btn.btn-medium{
+
+}
+.btn.btn-small{
+
+}
+.btn.btn-primary{
+
+}
+.btn.btn-secondary{
+
+}
+/** Button : END */
+
+h1.section-title{
+
+}
+h2.section-title{
+
+}
