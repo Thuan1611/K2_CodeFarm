@@ -97,8 +97,10 @@ const isTriangle = () => {
   }
   //   Tam giác = tổng độ dài của 2 cạnh lớn hơn cạnh còn lại; ab>c ; ac> b;bc>a
   if (a + b > c && a + c > b && b + c > a) {
-    return alert("Đây là tam giác hợp lệ");
+    alert("Đây là tam giác hợp lệ");
+    return true;
   } else {
-    return alert("Đây là không phải tam giác hợp lệ");
+    alert("Đây là không phải tam giác hợp lệ");
+    return false;
   }
 };
