@@ -117,15 +117,15 @@ const products = [
 ];
 
 function filteredProductNames(products, price) {
-  //   const result = products.filter((item) => item.price >= price);
-  //   return result;
-  const result = [];
-  for (let i = 0; i < products.length; i++) {
-    if (products[i].price >= price) {
-      result.push(products[i]);
-    }
-  }
-  return result
+    const result = products.filter((item) => item.price >= price);
+    return result;
+//   const result = [];
+//   for (let i = 0; i < products.length; i++) {
+//     if (products[i].price >= price) {
+//       result.push(products[i]);
+//     }
+//   }
+//   return result
 }
 // Output:
 const result = filteredProductNames(products, 200);
