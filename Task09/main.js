@@ -25,7 +25,7 @@ function calculateTotalCompletedAmount(array, amount) {
 
 // Output:
 const result = calculateTotalCompletedAmount(orders, 150);
-console.log(result,"Bài 1"); // 850
+console.log(result, "Bài 1"); // 850
 
 // const result2 = calculateTotalCompletedAmount(orders, 1000);
 // console.log(result2); // 0
@@ -48,7 +48,7 @@ const fruits = [
   "kiwi",
 ];
 
-function removeDuplicate(arr) {
+const removeDuplicate = (arr) => {
   // Xử lý và in ra kết quả
   return arr.reduce((acc, item) => {
     if (!acc.includes(item)) {
@@ -56,14 +56,14 @@ function removeDuplicate(arr) {
     }
     return acc;
   }, []);
-}
+};
 
 // Output:
 
-console.log(removeDuplicate(fruits),"Bài 2"); // ["apple", "banana", "kiwi", "orange"]
+console.log(removeDuplicate(fruits), "Bài 2"); // ["apple", "banana", "kiwi", "orange"]
 
 Array.prototype.map2 = function (callback) {
-  const result = new Array(this.length); 
+  const result = new Array(this.length);
 
   for (let i = 0; i < this.length; i++) {
     if (i in this) {
@@ -80,7 +80,7 @@ Array.prototype.map2 = function (callback) {
 const arr1 = [1, 2, 3, 4, 5];
 const result1 = arr1.map2((value) => value * 2);
 
-console.log(result1,"Bài 4"); // [2, 4, 6, 8, 10]
+console.log(result1, "Bài 4"); // [2, 4, 6, 8, 10]
 // console.log(result1.length); // 5
 
 // // Sample 2
@@ -89,7 +89,6 @@ console.log(result1,"Bài 4"); // [2, 4, 6, 8, 10]
 
 // console.log(result2); // [2, , , , 10]
 // console.log(result2.length); // 5
-
 
 Array.prototype.forEach2 = function (callback) {
   const length = this.length;
@@ -101,8 +100,3 @@ Array.prototype.forEach2 = function (callback) {
   }
 };
 
-const arr = [1, 2, 3, 4, 5];
-
-arr.forEach2((value, index) => {
-  console.log(`Bài 5: Value at index ${index}: ${value}`,);
-});
