@@ -7,8 +7,8 @@ const arrayString = ["name:John", "age:30", "city:NY"];
 function convertArrayToObject(array) {
   return array.reduce((acc, cur) => {
     const [key, value] = cur.split(":");
-    console.log(key, "key");
-    console.log(value, "value");
+    // console.log(key, "key");
+    // console.log(value, "value");
     acc[key] = value;
     return acc;
   }, {});
