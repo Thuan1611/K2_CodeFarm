@@ -98,15 +98,12 @@ function filterProducts() {
   if (keyword) {
     filtered = filtered.filter((p) => p.name.toLowerCase().includes(keyword));
   }
-
   const selectedTypes = [...filterCheckboxes]
     .filter((cb) => cb.checked)
     .map((cb) => cb.value);
   if (selectedTypes.length > 0) {
     filtered = filtered.filter((p) => selectedTypes.includes(p.type));
   }
-
-  // Sắp xếp giá
   const sortValue = sortSelect.value;
   if (sortValue === "asc") {
     filtered.sort((a, b) => a.price - b.price);
@@ -116,11 +113,7 @@ function filterProducts() {
 
   renderProducts(filtered);
 }
-
-// Gắn sự kiện
 searchInput.addEventListener("input", filterProducts);
 sortSelect.addEventListener("change", filterProducts);
 filterCheckboxes.forEach((cb) => cb.addEventListener("change", filterProducts));
-
-// Render ban đầu
 renderProducts(products);
