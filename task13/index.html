@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="filters">
+      <input type="text" id="search" placeholder="Tìm sản phẩm" />
+
+      <div>
+        <label
+          ><input type="checkbox" class="filter-type" value="games" />
+          Games</label
+        ><br />
+        <label
+          ><input type="checkbox" class="filter-type" value="smartphones" />
+          Smartphones</label
+        ><br />
+        <label
+          ><input type="checkbox" class="filter-type" value="cameras" />
+          Cameras</label
+        ><br />
+        <label
+          ><input type="checkbox" class="filter-type" value="televisions" />
+          Televisions</label
+        >
+      </div>
+
+      <select id="sort">
+        <option value="">Sắp xếp giá</option>
+        <option value="asc">Giá thấp → cao</option>
+        <option value="desc">Giá cao → thấp</option>
+      </select>
+    </div>
+
+    <div id="product-list" class="products"></div>
+    <script src="./main.js"></script>
+  </body>
+</html>
